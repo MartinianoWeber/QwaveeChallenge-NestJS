@@ -19,4 +19,10 @@ export const validationMessages = {
     productExist: "El producto ya existe",
     productErrorId: "El producto con el id seleccionado no existe",
   },
+
+  serviceMessages: {
+    productDeleted: "El producto ha sido eliminado con el id:",
+    productUpdated: "El producto ha sido actualizado con el id:",
+    productCreate: "El producto ha sido creado :",
+  },
 };

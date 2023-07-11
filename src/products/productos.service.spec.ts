@@ -52,17 +52,16 @@ describe("ProductosService", () => {
         nombre: "test",
         descripcion: "test",
         precio: 1,
-        id: 0,
       };
-      const createdProduct = {
-        id: 0,
+      const newProduct = {
         nombre: "test",
         descripcion: "test",
         precio: 1,
       };
+
       jest
         .spyOn(service, "createProduct")
-        .mockImplementation(() => Promise.resolve(createdProduct));
+        .mockImplementation(() => Promise.resolve(newProduct));
       expect(
         await service.createProduct({
           nombre: "test",

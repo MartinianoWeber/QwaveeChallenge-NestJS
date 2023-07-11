@@ -41,6 +41,3 @@ export class ProductController {
     return this.productosService.updateProduct(id, producto);
   }
 }
-//  COonstantes msg de dto create y update
-// ingles todo
-// cambiar nombre

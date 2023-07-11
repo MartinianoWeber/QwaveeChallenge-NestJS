@@ -63,6 +63,7 @@ describe("ProductController", () => {
         descripcion: "test",
         precio: 1,
       };
+
       jest
         .spyOn(controller, "createProduct")
         .mockImplementation(() => Promise.resolve(createdProduct));
@@ -97,9 +98,9 @@ describe("ProductController", () => {
 
     it("should delete a product", async () => {
       const productId = 1;
-      const deleteResult: DeleteResult = {
-        affected: 1,
+      const deleteResult = {
         raw: [],
+        affected: 1,
       };
       jest
         .spyOn(controller, "deleteProduct")
