@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "30bb9e33-0b19-4988-950f-dc07ad51e749",
+		"name": "QWavee Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27582925"
+	},
+	"item": [
+		{
+			"name": "Traer todos los productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/productos?filter=",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"ejemplo\",\r\n    \"precio\": 1000,\r\n    \"descripcion\":\"ejemplo\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar producto",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Updatear producto",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"ejemplo\",\r\n    \"precio\": 1000,\r\n    \"descripcion\":\"ejemplo\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/productos/0",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
